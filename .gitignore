@@ -1,0 +1,13 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+
+# Misc
+.DS_Store
+
+# Logs
+*.log*
+
+# Temp
+gitmojis.json

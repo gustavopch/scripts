@@ -1,0 +1,54 @@
+{
+  "name": "@gustavopch/scripts",
+  "version": "0.0.0",
+  "description": "CLI toolbox of common scripts for my projects",
+  "license": "MIT",
+  "author": "Gustavo P. Cardoso <https://twitter.com/gustavo_pch>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavopch/scripts.git"
+  },
+  "engines": {
+    "node": ">=10.18"
+  },
+  "bin": {
+    "gpc-scripts": "lib/index.js"
+  },
+  "files": [
+    "lib",
+    "prettier.js"
+  ],
+  "scripts": {
+    "validate": "node lib validate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node lib pre-commit",
+      "commit-msg": "node lib commit-msg"
+    }
+  },
+  "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@semantic-release/gitlab": "^6.0.2",
+    "cosmiconfig": "^6.0.0",
+    "cross-spawn": "^7.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^2.3.0",
+    "glob": "^7.1.6",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "lodash.has": "^4.5.2",
+    "prettier": "^1.19.1",
+    "read-pkg-up": "^7.0.1",
+    "resolve-bin": "^0.4.0",
+    "semantic-release": "^17.0.4",
+    "semantic-release-gitmoji": "^1.3.3",
+    "yargs-parser": "^18.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "3.8.3"
+  }
+}
